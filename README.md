@@ -18,7 +18,7 @@ mongodb 설치
 1. use DATABASE_NAME
     - use PICSELL (소스코드 기준)
 2. db.createCollection("COLLECTION_NAME")
-    - db.createCollection("memberschemas")
+    - db.createCollection("members")
 
 
 소스코드 설치
