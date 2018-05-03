@@ -86,7 +86,7 @@ app.get('/member/email/:email', function(req, res) {
 });
 
 // e-mail 정보를 통해 like 검색
-app.get('/members/email/:email', function(req,  res) {
+app.get('/members/email/:email/:userid', function(req,  res) {
   memberModel.find({email: {$regex: '.*' + req.params.email + '.*'}}, function(error, members) {
     if (error) {
       res.end(responseObject.setResponse(res, {result: false, message: 'search error[' + error + ']', members: null}, 500));
