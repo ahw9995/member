@@ -6,10 +6,8 @@
   - brew install mongodb
     - 만약 homebrew가 없다면
     - Ruby -e “$(curl -fsSL https://raw.github.com/mxcl/homebrew/go/install)”
-
-- mkdir -p /data/db
-
-- sudo chown $USER/data/db
+  - mkdir -p /data/db
+  - sudo chown $USER/data/db
 
 - mongodb 실행
   - mongod
